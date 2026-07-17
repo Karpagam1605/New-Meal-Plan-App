@@ -1,0 +1,159 @@
+.meal-detail-view {
+   width: 95%;
+  max-width: 1600px;
+  margin: 40px auto;
+  padding: 32px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  text-align: left;
+}
+
+.meal-detail-empty {
+  text-align: center;
+}
+
+.meal-detail-empty p {
+  margin-bottom: 16px;
+  color: #475569;
+}
+
+.meal-detail-hero {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.meal-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meal-detail-view button {
+  border: none;
+  background: #f97316;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.25s ease;
+  
+}
+
+.meal-detail-view button:hover {
+  background: #ea580c;
+  transform: translateY(-1px);
+}
+
+.meal-detail-view h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.meal-detail-view img {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  margin: 0;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.meal-info {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.meal-tag {
+  background: #fff7ed;
+  color: #ea580c;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid #fed7aa;
+}
+
+.ingredients-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.ingredients-table th,
+.ingredients-table td {
+  border: 1px solid #ddd;
+  padding: 3px 6px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.ingredients-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.ingredients-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.instructions {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.instructions h3 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.instructions li {
+  text-align: left;
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.instructions p {
+  line-height: 1.7;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .meal-detail-view {
+    margin: 20px 16px;
+    padding: 20px;
+  }
+
+  .meal-detail-hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .meal-detail-view h2 {
+    font-size: 1.6rem;
+  }
+
+  .meal-detail-view img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
