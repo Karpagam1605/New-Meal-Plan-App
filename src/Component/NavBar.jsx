@@ -20,7 +20,7 @@ const navigate= useNavigate();
         
           <button type="button" className="home-pill" onClick={() => navigate("/favorites")}>Favs ({favoritesCount})</button>
         <button type="button" className="home-button" onClick={() => navigate("/random")}>
-          Surprise Me old
+          Surprise Me
         </button>
       </div>
     </header>
