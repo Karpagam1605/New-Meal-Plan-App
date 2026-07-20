@@ -128,17 +128,34 @@ While building this project, I learned how to:
 
 ## Future improvements
 
-Possible next steps:
+Possible next steps for this project:
 
-- add dark mode
-- add pagination or “load more”
-- improve favorites UI with cards instead of a text list
-- add unit tests with Vitest and React Testing Library
-- add better empty states and error screens
-- add search suggestions
-- improve accessibility and keyboard navigation
-- use `useMemo` for derived values like sorted cuisine lists, ingredient parsing, and instruction step formatting
-- optimize expensive render-time calculations by memoizing filtered, sorted, or transformed meal data
+- **Add dark mode**  
+    Let users switch between light and dark themes for a better viewing experience.
+
+- **Add pagination or “load more”**  
+    Show search results in smaller groups instead of displaying everything at once.
+
+- **Improve favorites UI with cards**  
+    Make the favorites page more visual and consistent with the meal grid on the home page.
+
+- **Add unit tests**  
+    Use Vitest and React Testing Library to test components, hooks, and user interactions.
+
+- **Improve empty and error states**  
+    Show clearer messages and better UI when no meals are found or when an API request fails.
+
+- **Add search suggestions**  
+    Help users find meals faster by suggesting names while they type.
+
+- **Improve accessibility and keyboard navigation**  
+    Make the app easier to use for keyboard users and screen readers.
+
+- **Use `useMemo` for derived values**  
+    Optimize values like sorted cuisine lists, ingredient lists, and formatted instructions so they are not recalculated on every render.
+
+- **Optimize expensive calculations**  
+    Memoize filtered, sorted, or transformed meal data if the app grows and handles larger datasets.
 
 ## API source
 
