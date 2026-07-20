@@ -137,6 +137,8 @@ Possible next steps:
 - add better empty states and error screens
 - add search suggestions
 - improve accessibility and keyboard navigation
+- use `useMemo` for derived values like sorted cuisine lists, ingredient parsing, and instruction step formatting
+- optimize expensive render-time calculations by memoizing filtered, sorted, or transformed meal data
 
 ## API source
 
